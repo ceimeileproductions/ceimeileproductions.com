@@ -5,7 +5,7 @@ import About from "./containers/about/About";
 import Team from "./containers/team/Team";
 import Artists from "./containers/artists/Artists";
 import WorkWithUs from "./containers/work-with-us/WorkWithUs";
-import { Layout, Menu } from "antd";
+import { Layout, Menu, Typography } from "antd";
 import {
   TeamOutlined,
   HomeOutlined,
@@ -17,6 +17,7 @@ import "./App.css";
 
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
+const { Title } = Typography;
 
 function App() {
   const [collapsed, setCollapsed] = React.useState<boolean>(false);
@@ -73,11 +74,11 @@ function App() {
       </Sider>
       <Layout className="site-layout">
         <Content style={{ margin: "10px 16px" }}>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/team" component={Team} />
-            <Route path="/artists" component={Artists} />
-            <Route path="/work-with-us" component={WorkWithUs} />
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/team" component={Team} />
+          <Route path="/artists" component={Artists} />
+          <Route path="/work-with-us" component={WorkWithUs} />
         </Content>
         <Footer style={{ textAlign: "center" }}>
           Céim Eile Productions © 2020

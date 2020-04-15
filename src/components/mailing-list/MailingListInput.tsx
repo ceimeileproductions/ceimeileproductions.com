@@ -2,6 +2,8 @@ import React from "react";
 import { Input } from "antd";
 import MailingListResult from "./MailingListResult";
 import jsonp from "jsonp";
+import { Typography } from "antd";
+const { Title } = Typography;
 
 export default () => {
   const [submitted, setSubmitted] = React.useState<boolean>(false);
@@ -29,6 +31,7 @@ export default () => {
   const { Search } = Input;
   return (
     <>
+      <Title level={3} className="mailing-list-text">Join our mailing list!</Title>
       {!submitted ? (
         <Search
           placeholder="Email address"
@@ -41,8 +44,8 @@ export default () => {
           onSearch={onSubmit}
         />
       ) : (
-        <MailingListResult key={resultType} resultType={resultType} />
-      )}
+          <MailingListResult key={resultType} resultType={resultType} />
+        )}
     </>
   );
 };

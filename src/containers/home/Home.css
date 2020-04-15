@@ -1,0 +1,21 @@
+.mailing-list-text {
+    text-align: center;
+    font-weight: 100 !important;
+}
+
+.tagline-row {
+    text-align: center;
+}
+
+.tagline-col-text {
+    font-size: 62px !important;
+    letter-spacing: 0.123em;
+    font-weight: 200 !important;
+}
+
+.coming-soon-text {
+    text-align: center;
+    font-weight: 100 !important;
+    font-size: 3em !important;
+    margin-top: 0px;
+}
